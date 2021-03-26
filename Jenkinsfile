@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'pyhton'
+        label 'python'
     }
     stages {
         stage('test module') {
