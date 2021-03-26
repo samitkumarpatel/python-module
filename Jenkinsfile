@@ -4,10 +4,13 @@ pipeline {
     }
     stages {
         stage('test module') {
-            sh """
-                ls -al
-                python main_program.py
-            """
+            steps {
+                sh """
+                    ls -al
+                    python main_program.py
+                """
+            }
+           
         }
     }
 }
